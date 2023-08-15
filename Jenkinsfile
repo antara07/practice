@@ -4,6 +4,7 @@ node {
   }
 
   stage("Compilation") {
+    sh "java -version"
     sh "./mvnw -version"
     sh "./mvnw clean install -DskipTests"
   }
